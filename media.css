@@ -1,0 +1,253 @@
+@media screen and (max-width:1260px){
+    .grid-ites{
+        margin: 0 ;
+    }
+    .section-grid{
+        display: block;
+       
+        
+    }
+    .section-grid-items{
+       width: 100%;
+        margin-bottom: 1rem;
+       
+    }
+    .description p{
+        font-size: 1.3rem;
+    }
+
+}
+@media screen and (max-width:1060px) {
+    .section-grid{
+        width: 80%;
+    }
+    .hotel-image{
+        max-height: 30rem;
+        width: 100%;
+    }
+   .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3,30rem);
+        text-align: center;
+
+    }
+    
+    .hotel-name{
+        font-size: 2rem;
+        top:12rem;
+        left:12rem
+    }
+    .hotel-price{
+        font-size: 1rem;
+        top:14rem;
+        left:12rem;
+        
+    }
+    .hotel-rating{
+        font-size: 0.8rem;
+        top:16rem;
+        left:12rem;
+    }
+    
+    .hotel-btn{
+      
+        top:18rem;
+        left:10rem;
+       
+    }
+    .garden{
+        top:12rem;
+        left:6rem;
+    }
+   
+    
+}
+@media screen and (max-width: 900px){
+    .section-grid{
+        display: block;
+        width: 100%;
+        
+    }
+    .description p{
+        font-size: 1.6rem;
+    }
+    
+    .price{
+        font-size: 2.5rem;
+    }
+    .section-grid-items{
+        display: block;
+        height: 28rem;
+    }
+    .img-btn{
+        font-size: 1.5rem;
+    }
+    .grid-img{
+        height: 15rem;
+    }
+    .img-container::before{
+        height: 15rem;
+    }
+    nav{
+        font-size: 0.8rem;
+    }
+    .items{
+        padding: 0.5rem;
+    }
+    .input-group{
+       
+        margin-left: 1rem;
+    }
+    .input-level{
+       
+        margin-bottom: 1rem;
+    }
+    .input{
+        margin-bottom: 1rem;
+        padding: .2rem;
+        width: 100%;
+    }
+    .btn-purple{
+        width: 100%;
+        margin: 0 auto;
+        width: 12rem;
+    }
+    select
+    {  margin-bottom: 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        padding: 0.3rem .5rem;
+    }
+    
+    .form{
+       width: 100%;
+       display: grid;
+       grid-template-columns: 1fr;
+       align-content: center;
+       grid-template-rows: repeat(5,2rem) auto;
+       row-gap: 1rem;
+      
+
+    }
+    .hotel-price{
+        font-size: 2rem;
+    }
+    .hotel-rating{
+        font-size: 1.3rem;
+    }
+   
+   
+    
+    
+}
+@media screen and (max-width: 560px){
+    .touch{
+        display: block;
+        text-align: justify;
+      
+    }
+    .contact textarea,.contact input{
+        height: 2rem;
+        width: 100%;
+        margin-bottom: 0.2rem;
+    }
+    .contact textarea{
+        height: 4rem;
+        margin-left: 0.5rem;
+    }
+    
+.items_list{
+  height: 60vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #350a4f;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: block;;
+  z-index: 1500;
+
+}
+header{
+    height: 4rem;
+}
+.fa-bars{
+    display: block;
+}
+
+.items{
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.menu{
+    position: fixed;
+    right: 0;
+    top: -1;
+    height: 1.5rem;
+    z-index: 1503;
+    color: white;
+    width: 2rem;
+}
+.title{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    align-items: center;
+}
+.subtitle{
+    font-family: 'Courgette',cursive;
+    font-size: 1.5rem;
+}
+.btn-gradient{
+   
+    font-size: 0.7rem;
+    margin-bottom: -10rem;
+    width: 15rem;
+    z-index: -100;   
+}
+.box{
+    top:27rem;
+
+   
+}
+.hotel-btn{
+    padding: .6rem 3.5rem 0.4rem 3.5rem;
+    z-index: 1503;
+    margin-top: 1rem;
+}
+.hero{
+  margin-bottom: -10rem;
+}
+.main-heading{
+    margin-bottom: 1rem;
+    margin-top: -10rem;
+}
+.btn-purple{
+    width: 100%;
+    margin: 0 auto;
+    width: 8rem;
+}
+ .hotel-image{ 
+
+    width: 100%;
+}
+.grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,28rem);
+    text-align: center;
+
+}
+
+
+
+}
+
+@media screen and(max-width:2200px){
+    .menu{
+        display: none;
+    }
+}

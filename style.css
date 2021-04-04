@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Open+Sans:400,800&display=swap');
+/*Basic reset*/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Custom properties*/
+:root {
+    --dark-color: #2d2c2c;
+    --purple-solid: #350a4f;
+    --purple-transparent: rgba(53, 10, 79, .7);
+    --purple-transparent-alt: rgba(53, 10, 79, .5);
+    --purple-light: #8f50fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right, var(--yellow-solid), var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right, var(--purple-light), var(--yellow-solid));
+}
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+    cursor: pointer;
+}
+header{
+
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color:var(--purple-transparent);
+ color: #fff;
+ width: 100%;
+ top:0;
+ height: 4rem;
+ position: fixed;
+ flex-wrap: wrap;
+ left: 0;
+}
+.items_list{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+   font-family: 'Open Sans',sans-serif;
+}
+.items{
+    padding: 1rem;
+}
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+ 
+   
+}
+.logo{
+   height: auto;
+   
+   margin-top: 0.8rem;
+}
+.buttons{
+    display: flex;
+}
+ .close,.open{
+    height: 1rem;
+    cursor: pointer;
+    margin-right: 0.4;
+}
+.btn-close{
+    display: none;
+
+}
+.btn-open{
+    display: block;
+}
+.logo-img{
+  height: 2rem;
+}
+
+.fas{
+    height: 1.5rem;
+  margin-left: 0.4;
+  cursor: pointer;
+  z-index: 1508;
+
+}
+.fa-bars{
+    display: none;
+}
+.fa-times{
+    
+    display: none;;
+}
+/*hero section*/
+
+.hero{
+  
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/hero_background.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+   z-index: -1;
+   text-decoration: none;
+   outline: none;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: inherit;
+    width: inherit;
+    max-width: 120rem;
+    background-color: var(--purple-transparent-alt);
+    z-index: -2;
+
+}
+section{
+    padding: 5rem 0;
+}
+.main-heading{
+    color: #fff;
+    line-height: 1;
+    position: relative;
+    text-shadow: 1px 1px 1px 1rem rgba(0,0,0,0.5);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.title{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    align-items: center;
+    text-align: center;
+}
+.subtitle{
+    margin-top: 1rem;
+    margin-left: 8rem;
+    font-family: 'Courgette',cursive;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.box{
+   position: absolute;
+   top: 35rem;
+   
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 3rem;
+}
+
+.btn{
+  
+    display: inline-block;
+    margin-bottom: -4rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .6rem 3.5rem 0.4rem 3.5rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    border: none;
+    width: 18rem;
+  
+   text-align: center;  
+   outline: none;
+ 
+   
+}
+
+.container{
+  
+    width: 100%;
+    max-width: 120rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+.dots{
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
+ 
+}
+.btn-gradient{
+    background-image:var(--gradient-color) ;
+    
+}
+.forms{
+    margin-top: 4rem;
+   
+    width: 100%;
+  
+    background-image: var(--gradient-color);
+}
+.form{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.input-group{
+    margin-left: 1rem;
+}
+.input{
+    padding: .2rem;
+}
+select
+{
+    width: 6rem;
+    padding: 0.3rem .5rem;
+}
+.form label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
+
+.btn-purple{
+   
+    background-color: var(--purple-solid);
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    display: inline-flexbox;
+    
+    padding: .2rem 0.75rem 0.2rem 0.75rem;
+    width: 8rem;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-left: 1rem;
+    margin-top: -3rem;
+  
+}
+
+.btn-purple:hover{
+    background-color: var(--purple-light);
+    color: var(--yellow-solid);
+    transition: all 0.4s;
+}
+
+.grid{
+ display: grid;
+ margin: 0 auto;
+ text-align: center;
+  grid-template-columns: 40rem 40rem 40rem; 
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 2.5rem;
+  column-gap: 2rem;
+ 
+  
+  
+}
+.grid-ites{
+   
+  
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 24rem;
+   text-align: center;
+   background-size: cover;
+   background-position: center;
+   z-index:- 1000;
+   border: 2px solid red;
+   position: relative;
+  
+}
+.item-1{
+    background-image:url(images/hotel_astro_resort.jpg);
+}
+.item-2{
+    background-image:url(images/hotel_the_enchanted_garden.jpg);
+}
+.item-3{
+    background-image:url(images/hotel_the_paradise.jpg);
+}
+.grid-ites::before{
+    position: absolute;
+    content: '';
+   height: 24rem;
+   width: 100%;
+    background-color:var(--purple-transparent-alt);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: 1000;
+}
+
+.hotels-head{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2d2c2c;
+}
+
+
+.hotels-head h3{
+    font-size: 1.5rem;
+      font-family: 'Courgette',cursive;;
+}
+
+.hotel-name{
+    z-index: 1001;
+    color:#fff;
+    font-size: 1.4rem;
+    font-weight: bold;
+  
+}
+ .hotel-price{
+    z-index: 1001;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.hotel-rating{
+ 
+   z-index: 1001;
+    font-weight: bold;
+}
+.hotel-btn{
+    font-size: 0.7rem;
+    z-index: 1001;
+    display: block;
+    padding: 0.1rem 0.2rem;
+    text-align: center;
+    width: 60%;
+margin-top: 1rem;   
+} 
+.rating{
+  fill: var(--gradient-color);
+  color: var(--gradient-color);
+  color: rgb(233, 149, 22);
+}
+.offer{
+content: '';
+width: 100%;
+height: 100%;
+background:linear-gradient(to right,rgba(250,158,44,.8),rgba(143,80,251,0.8)),
+url('images/the_paradise_bg.jpg') bottom center no-repeat ;
+
+}
+.offer-content{
+    background-color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    font-size: 1.5rem;
+    position: relative;
+    box-shadow: 0.2 0.2 0.2 0.2 purple;
+}
+.offer-btn{
+    margin-top: 2rem;
+}
+.offer-name{
+    color: black;
+}
+.discount{
+    background-color: rgb(240, 111, 18);
+    position: absolute;
+    top:0;
+    font-size: 2rem;
+    left: 0;
+    font-weight: bold;
+}
+.rooms{
+    text-align: center;;
+}
+.section-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 60%;
+    margin: 30px auto;
+   grid-gap: 1rem;
+    
+ }
+ .section-grid-items{
+     height: 10rem;
+     width: 100%;
+     margin: 0;
+     display: flex;
+    position: relative;
+   
+ }
+ 
+ .grid-img{
+     height: 10rem;
+     width: 100%; 
+     
+ }
+ .img-container{
+     position: relative;
+ }
+ .img-container::before{
+    position: absolute;
+    content: '';
+   height: 10rem;
+   width: 100%;
+    background-color:var(--purple-light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: 1;
+}
+ .img-btn{
+     padding: 0.2rem;
+     background-color: #fa9e2c;
+     outline: none;
+     text-align: center;
+     text-decoration: none;
+     border: none;
+     font-size: 0.8rem;
+     margin-top: 0.5rem;
+     color:black;
+     border-radius: 2px;
+     text-align: justify;
+     display: block;
+     background-color: white;
+     font-weight: bold;
+ }
+ .img-name{
+     position: absolute;
+     bottom: 1rem;
+     left: 0;
+     background-color: rgba(238, 163, 25, 0.925);
+     color: white;
+     z-index: 4;
+     font-size: 1.2rem;
+     font-weight: bold;
+ }
+ 
+ .price{
+     color: rgb(255, 115, 0);
+     font-size: 2rem;
+      font-weight: bold;
+   
+ }
+ .description{
+     font-size: 1rem;
+ }
+ .description p{
+     margin-top: 0.4rem;
+     text-align: justify;
+     margin-left: 0.2rem;
+
+ }
+ .contact{
+
+     background-image: url(images/traveler.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+ }
+ .contact{
+     text-align: center;
+     background-image: var(--gradient-color-alt);
+ }
+.touch{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+ margin: 0 auto;
+   
+}
+.contact textarea,.contact input{
+    height: 2rem;
+    width: 80%;
+}
+textarea{
+    height: 4rem;
+}
+
+
+.contact label,.contact input{
+    margin: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+}
+.info{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.follow {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 3rem;
+
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color:red;
+}
+.fa-twitter{
+    color: rgb(6, 6, 241);
+}
+.fa-pinterest{
+    color: rgb(255, 0, 43);
+}
